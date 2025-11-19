@@ -102,7 +102,7 @@ ai-qa-agent/
 ## **1. Clone the project**
 
 ```bash
-git clone https://github.com/your-repo/ai-qa-agent.git
+git clone https://github.com/Kriks-Tangeneer/ai-qa-agent.git
 cd ai-qa-agent
 ```
 
