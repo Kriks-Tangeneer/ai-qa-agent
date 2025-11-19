@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+/* 🔹 FIX CODE BLOCK READABILITY IN LIGHT MODE */
+:not(.dark) pre code {
+  background-color: #f5f5f5 !important;
+  color: #1f2937 !important; /* dark gray text */
+}
+
+:not(.dark) code {
+  background-color: #eaeaea;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Optional: Style the pre container for better contrast */
+:not(.dark) pre {
+  background-color: #f5f5f5 !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+/* 🔹 Dark mode (already works fine, but making sure) */
+.dark pre code {
+  background-color: #1e1e1e !important;
+  color: #f8f8f2 !important;
+}
+
+/* Optional: Style the pre container in dark mode */
+.dark pre {
+  background-color: #1e1e1e !important;
+}
+
+/* -------------------------------------------------- */
+/* 🔹 MARKDOWN BASE TYPOGRAPHY IMPROVEMENTS          */
+/* -------------------------------------------------- */
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.markdown-body h1 {
+  font-size: 1.9rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+.dark .markdown-body h1 {
+  border-bottom: 2px solid #374151;
+}
+
+.markdown-body h2 {
+  font-size: 1.6rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.35rem;
+}
+
+.markdown-body h4 {
+  font-size: 1.2rem;
+}
+
+.markdown-body strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.dark .markdown-body strong {
+  color: #f3f4f6;
+}
+
+/* 🔹 Paragraph spacing */
+.markdown-body p {
+  margin: 0.6rem 0;
+}
+
+/* -------------------------------------------------- */
+/* 🔹 Horizontal Rule Improvement */
+/* -------------------------------------------------- */
+
+.markdown-body hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 1.5rem 0;
+}
+
+.dark .markdown-body hr {
+  border-top: 2px solid #4b5563;
+}
+
+/* -------------------------------------------------- */
+/* 🔹 Lists */
+/* -------------------------------------------------- */
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-left: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.markdown-body li {
+  margin: 0.3rem 0;
+}
+
+/* -------------------------------------------------- */
+/* 🔹 Blockquotes */
+/* -------------------------------------------------- */
+
+.markdown-body blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 1rem;
+  color: #4b5563;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.dark .markdown-body blockquote {
+  border-left: 4px solid #6b7280;
+  color: #d1d5db;
+}
+
+/* -------------------------------------------------- */
+/* 🔹 Inline Code */
+/* -------------------------------------------------- */
+
+.markdown-body code {
+  font-family: Consolas, monospace;
+  font-size: 0.95rem;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Already handled in your existing section for color */
+
+/* -------------------------------------------------- */
+/* 🔹 Tables */
+/* -------------------------------------------------- */
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid #d1d5db;
+  padding: 8px;
+}
+
+.dark .markdown-body th,
+.dark .markdown-body td {
+  border: 1px solid #4b5563;
+}
+
+.markdown-body th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.dark .markdown-body th {
+  background-color: #374151;
+}
+
+/* -------------------------------------------------- */
+/* END MARKDOWN ENHANCEMENTS */
+/* -------------------------------------------------- */
+

@@ -1,0 +1,45 @@
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Build Output ---
+dist/
+build/
+
+# Vite cache
+.vite/
+vite.config.temp/
+
+# --- Environment Files ---
+.env
+.env.local
+.env.*.local
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+log.txt
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Editor & IDE Files ---
+.vscode/
+.idea/
+*.swp
+
+# --- Temporary Files ---
+tmp/
+temp/
+*.tmp
+
+# --- TypeScript (if added later) ---
+*.tsbuildinfo
+
+# --- Optional: Debugging dumps ---
+*.stackdump
